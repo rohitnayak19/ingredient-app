@@ -16,7 +16,7 @@ A simple JavaScript web app to manage grocery ingredients by category. You can a
 
 ## 📸 Screenshots
 
-![Screenshot of the app](Screenshot 2025-07-19 184232.png) <!-- Replace with actual screenshot path -->
+![Screenshot of the app](Ui_screenshot.png)
 
 ---
 
