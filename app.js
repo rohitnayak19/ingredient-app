@@ -31,14 +31,13 @@ function renderIngredient(category, name) {
             list.appendChild(empty)
         }
         saveingredientData()
-        
     });
 
     list.appendChild(li)
 
 }
 addBtn.addEventListener("click", () => {
-    const ingredientName = input.value.trim();
+    const ingredientName = input.value.trim().toLowerCase();
     const selectedCategory = categorySelected.value;
 
     if (!ingredientName || !selectedCategory) {
@@ -50,9 +49,13 @@ addBtn.addEventListener("click", () => {
         ingredientData[selectedCategory] = []
     }
 
-    ingredientData[selectedCategory].push(ingredientName)
-    saveingredientData()
-    renderIngredient(selectedCategory, ingredientName)
+    if(!ingredientData[selectedCategory].includes(ingredientName)){
+        ingredientData[selectedCategory].push(ingredientName);
+        saveingredientData()
+        renderIngredient(selectedCategory, ingredientName)
+    } else{
+        alert(`${ingredientName} was already have in bukket list`)
+    }
 
     input.value = ""
 });

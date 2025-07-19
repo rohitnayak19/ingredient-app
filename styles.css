@@ -124,3 +124,23 @@ li.ingredient span {
   font-size: 0.9rem;
   color: #999;
 }
+
+@media (max-width: 570px) {
+  .input-row {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 10px; /* Optional spacing between items */
+  }
+
+  .input-row input[type="text"]{
+    width: 100%; /* Full width */
+  }
+
+  .input-row select{
+    width: fit-content;
+  }
+
+  .input-row button{
+    width: fit-content;
+  }
+}
