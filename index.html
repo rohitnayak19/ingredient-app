@@ -1,82 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Ingredients</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Ingredients</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>My Ingredients</h1>
+    <div class="container">
+        <h1>My Ingredients</h1>
 
-    <div class="input-row">
-      <input type="text" id="ingredientInput" placeholder="Enter ingredient" />
-      <select id="categorySelect">
-        <option value="" disabled selected>Select category</option>
-        <option value="vegetables">Vegetables</option>
-        <option value="fruits">Fruits</option>
-        <option value="meat">Meat</option>
-        <option value="seafood">Seafood</option>
-        <option value="dairy">Dairy</option>
-        <option value="grains">Grains</option>
-        <option value="legumes">Legumes</option>
-        <option value="nuts-seeds">Nuts & Seeds</option>
-        <option value="herbs-spices">Herbs & Spices</option>
-        <option value="oils-fats">Oils & Fats</option>
-        <option value="condiments">Condiments</option>
-        <option value="baking">Baking</option>
-        <option value="beverages">Beverages</option>
-        <option value="canned-goods">Canned Goods</option>
-        <option value="frozen-foods">Frozen Foods</option>
-      </select>
-      <button id="addButton">Add</button>
+        <div class="input-row">
+            <input type="text" id="ingredientInput" placeholder="Enter ingredient" />
+            <select id="categorySelect">
+                <option value="" disabled selected>Select category</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="fruits">Fruits</option>
+                <option value="meat">Meat</option>
+                <option value="seafood">Seafood</option>
+                <option value="dairy">Dairy</option>
+                <option value="grains">Grains</option>
+                <option value="legumes">Legumes</option>
+                <option value="nuts-seeds">Nuts & Seeds</option>
+                <option value="herbs-spices">Herbs & Spices</option>
+                <option value="oils-fats">Oils & Fats</option>
+                <option value="condiments">Condiments</option>
+                <option value="baking">Baking</option>
+                <option value="beverages">Beverages</option>
+                <option value="canned-goods">Canned Goods</option>
+                <option value="frozen-foods">Frozen Foods</option>
+            </select>
+            <button id="addButton">Add</button>
+        </div>
+
+        <div class="grid">
+            <!-- Repeat this block for each category -->
+            <div class="category" data-category="vegetables">
+                <h3>Vegetables</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+
+            <div class="category" data-category="fruits">
+                <h3>Fruits</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+
+            <div class="category" data-category="meat">
+                <h3>Meat</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+
+            <!-- Add more categories below following the same structure -->
+            <div class="category" data-category="seafood">
+                <h3>Seafood</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="dairy">
+                <h3>Dairy</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="grains">
+                <h3>Grains</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="legumes">
+                <h3>Legumes</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="nuts-seeds">
+                <h3>Nuts & Seeds</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="herbs-spices">
+                <h3>Herbs & Spices</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="oils-fats">
+                <h3>Oils & Fats</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="condiments">
+                <h3>Condiments</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="baking">
+                <h3>Baking</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="beverages">
+                <h3>Beverages</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="canned-goods">
+                <h3>Canned Goods</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+            <div class="category" data-category="frozen-foods">
+                <h3>Frozen Foods</h3>
+                <ul class="ingredients">
+                    <p class="empty">No ingredients</p>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="grid">
-      <!-- Repeat this block for each category -->
-      <div class="category" data-category="vegetables">
-        <h3>Vegetables</h3>
-        <ul class="ingredients">
-          <p class="empty">No ingredients</p>
-        </ul>
-      </div>
-
-      <div class="category" data-category="fruits">
-        <h3>Fruits</h3>
-        <ul class="ingredients">
-          <p class="empty">No ingredients</p>
-        </ul>
-      </div>
-
-      <div class="category" data-category="meat">
-        <h3>Meat</h3>
-        <ul class="ingredients">
-          <p class="empty">No ingredients</p>
-        </ul>
-      </div>
-
-      <!-- Add more categories below following the same structure -->
-      <div class="category" data-category="seafood">
-        <h3>Seafood</h3>
-        <ul class="ingredients">
-            <p class="empty">No ingredients</p>
-        </ul>
-    </div>
-      <div class="category" data-category="dairy"><h3>Dairy</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-      <div class="category" data-category="grains"><h3>Grains</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-      <div class="category" data-category="legumes"><h3>Legumes</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-      <div class="category" data-category="nuts-seeds"><h3>Nuts & Seeds</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-      <div class="category" data-category="herbs-spices"><h3>Herbs & Spices</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-      <div class="category" data-category="oils-fats"><h3>Oils & Fats</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-      <div class="category" data-category="condiments"><h3>Condiments</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-      <div class="category" data-category="baking"><h3>Baking</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-      <div class="category" data-category="beverages"><h3>Beverages</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-      <div class="category" data-category="canned-goods"><h3>Canned Goods</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-      <div class="category" data-category="frozen-foods"><h3>Frozen Foods</h3><ul class="ingredients"><p class="empty">No ingredients</p></ul></div>
-    </div>
-  </div>
-
-  <script src="./app.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
